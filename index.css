@@ -1,0 +1,33 @@
+.external {
+    color: blue;
+}
+
+.universal * {
+    border: 1px dashed;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+#id {
+    color: aquamarine;
+}
+
+.adjacentsibling+a {
+    color: blueviolet;
+}
+.child span{
+    background-color: white;
+}
+.child > span{
+    background-color: red;
+}
+.sibling ~ span{
+ color: red;
+}
+@media  (min-width: 600px) {
+    body{
+        background-color: bisque;
+    }
+}
