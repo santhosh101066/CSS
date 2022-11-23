@@ -1,0 +1,66 @@
+.active:active{
+    color: red;
+}
+.anyLink:any-link{
+    color: rgb(99, 236, 99);
+}
+.anyLink:visited{
+    color: red;
+}
+.active:link{
+    color: blue;
+}
+input:autofill{
+    border:2px solid blueviolet;
+}
+input:-webkit-autofill {
+    border:2px solid blueviolet;
+}
+.checkbox:checked{
+    outline:2px solid blueviolet;
+}
+.active:defined{
+font-weight: 100;
+}
+.enable:enabled{
+    outline: 2px solid red;
+}
+.enable:disabled{
+    outline: 2px solid rgb(72, 255, 0);
+}
+.empty:empty{
+    width: 100px;
+    height: 100px;
+    border: 2px red solid;
+}
+.firstchild:first-child{
+    background-color: bisque;
+}
+.focus:focus{
+    background-color: red;
+}
+.fullscreen{
+    width: 40%;
+}
+.fullscreen:fullscreen{
+    visibility: hidden;
+}
+.hover:hover{
+    color:red;
+    background-color: yellow;
+}
+input[type=number]:in-range{
+background-color: greenyellow;
+}
+.even:nth-child(even){
+    background-color: red;
+}
+.validate:invalid{
+    color: red;
+}
+.validate:valid{
+    color: green;
+}
+.lang span:lang(en){
+    background-color: greenyellow;
+}

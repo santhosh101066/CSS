@@ -1,0 +1,22 @@
+.before::before{
+    content: 'I am added before  ';
+    color: red;
+}
+.after::After{
+    content: ' I am added After  ';
+    color: red;
+}
+.firstline::first-line{
+    color: blue;
+}
+.firstline::first-letter{
+    color: rgb(0, 255, 0);
+}
+.firstline::selection{
+    color: rgb(255, 255, 255);
+}
+
+.marker li::marker{
+    content: '😁️  ';
+    font-size: x-small;
+}
