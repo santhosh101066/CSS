@@ -20,3 +20,10 @@
     content: '😁️  ';
     font-size: x-small;
 }
+input[type=file]::-webkit-file-upload-button{
+    color: red;
+    background-color: rgb(255, 253, 130);
+    outline: none;
+    border: 1px solid red;
+    border-radius: 12px;
+}

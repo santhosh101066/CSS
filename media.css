@@ -1,0 +1,82 @@
+
+@media (any-hover:hover){
+    .link:hover{
+        background-color: pink;
+    }
+}
+.check:checked{
+    background-color: red;
+}
+
+@media (any-pointer:fine) {
+   .check{
+    appearance: none;
+    border: 1px dashed red;
+    width: 20px;
+    height: 20px;
+   }
+}
+@media (any-pointer:coarse) {
+    .check{
+     appearance: none;
+     border: 1px solid rgb(0, 247, 255);
+     width: 25px;
+     height: 25px;
+    }
+ }
+ @media all and (display-mode:fullscreen){
+    body{
+        background-color: black;
+    }
+ }
+ @media screen and (width:400px) {
+    body{
+        background-color: blue;
+    }
+ }
+ @media screen and (min-width:600px) {
+    body{
+        background-color: rgb(255, 185, 185);
+    }
+      
+ }
+ @media screen and (max-width:500px) {
+    body{
+        background-color: greenyellow;
+    }
+ }
+
+ .size{
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+    margin: 30px;
+ }
+ .resize{
+    background-image: url('icon.png');
+ }
+ .resize1{
+    background-image: url('img.jpg');
+    background-size: cover;
+ }
+ .resize2{
+   background-image: url('img.jpg');
+   background-size: contain;
+}
+.resize3{
+   background-image: url('img.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.resize4{
+   background-image: url('icon.png');
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.col{
+   column-count: 3; 
+   /*columns: 3; */
+   column-gap: normal;
+   column-width: 100px;
+}
