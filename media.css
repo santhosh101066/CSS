@@ -75,8 +75,13 @@
    background-position: center;
 }
 .col{
-   column-count: 3; 
+   /* column-count: 3;  */
    /*columns: 3; */
    column-gap: normal;
    column-width: 100px;
+}
+.align{
+   display: block;
+   align-items: center;
+   flex-wrap: wrap;
 }

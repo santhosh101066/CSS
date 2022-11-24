@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .h1{
+            
+            animation: move 10s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+
+        }
+        .h2{
+            
+            animation: move 10s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+
+        }
+        .h3{
+            
+            animation: move 10s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+        }
+        .h4{
+            
+            animation: move 10s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+
+        }
+        .h5{
+            
+            animation: move 10s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes move {
+            0%{
+                margin-left:0% ;
+            }
+            
+            100%{
+                margin-left:80% ;
+            }
+        }
+        h1{
+            background-color: blue;
+        }
+        img{
+            display: block;
+            width: 40%;
+            margin: auto;
+            transition-duration: 3s;
+            
+
+        }
+        img:hover{
+            width:60%
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1">Linear</h1>
+    <h1 class="h2">Ease</h1>
+    <h1 class="h3">Ease in</h1>
+    <h1 class="h4">Ease out</h1>
+    <h1 class="h5">Ease in - out</h1>
+    <br><br><br><br>
+    <img src="icon.png" alt="transition">
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
