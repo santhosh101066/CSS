@@ -11,41 +11,106 @@
 
 <body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
         .internal {
             color: green
         }
+
+        .content h2 {
+            font-family: 'Nerko One', cursive;
+            font-size: 50px;
+            margin: 0;
+            
+        }
+        .content > div{
+            padding: 20px;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            gap: 20px;
+
+
+        }
+        .content > div  button{
+            border-radius: 10px;
+            width: 100%;
+            height: 30px;
+            background-image: linear-gradient(0deg, rgb(163, 163, 255), rgb(255, 255, 255));
+        }
+        .parents{
+            background-color: aliceblue;
+        }
+        .parents > div{
+            background-color: red;
+        }
+        .parents > div ~ div{
+            background-color: pink;
+        }
+
     </style>
     <h1 style="color: red;">Inline CSS</h1>
     <h1 class="internal">Internal CSS</h1>
     <h1 class="external">Internal CSS</h1>
+    <div class="parents">Parent
+        <div>child <div>child-child</div></div>
+        <div>sibling <div>sibling-child</div></div>
+        
+    </div>
+    <section>
+        <div class="content">
+            <h2>All Css links</h2>
+            <div>
+              <a href="pseudoclass.html"><Button>Pseudo classes</Button></a>
+              <a href="pseudoelements.html"><Button>Pseudo elements</Button></a>
+              <a href="media.html"><Button>Media</Button></a>
+              <a href="Animation.html"><Button>Animation</Button></a>
+              <a href="flex.html"><Button>flex</Button></a>
+              <a href="grid.html"><Button>grid</Button></a>
 
+            </div>
+            
+        </div>
+    </section>
+    <!-- using universal selectors with decendent combinator -->
     <div class="universal">
-        <h1 >Universal selector</h1>
+        <h1>Universal selector</h1>
         <p>Sample text</p>
     </div>
+    <!-- using id selector -->
     <h1 id="id">ID selector</h1>
+
+    <!-- * combinator * -->
+    <!-- Adjacent siblings combinator -->
     <h1 class="adjacentsibling">Adjacent sibling combinator</h1>
     <a href="/">Sampletext</a>
+
+    <!-- Child combinator -->
     <div class="child">
         <span> Hii <span>Welcome </span></span>
     </div>
-     <span>Sampletext</span>
-     <br><br><br>
-
-     <div><span>Sample</span>
+    <span>Sampletext</span>
+    <br><br><br>
+    <!-- general sibling combinator -->
+    <div><span>Sample</span>
         <p class="sibling">General sibling</p>
         <span>Sample</span>
         <span>Sample</span>
         <span>Sample</span>
         <span>Sample</span>
-     </div>
-     <span>Sample</span>
-     <hr>
-     <a href="pseudoclass.html">Pseudo classes</a> <br><br>
-     <a href="pseudoelements.html">Pseudo elements</a><br><br>
-     <a href="media.html">media</a>
-     <button onclick="alert('n')" type="submit"><div><h1>Hii</h1>
-    <p>This is a button</p></div></button>
+    </div>
+    <span>Sample</span>
+    <hr>
+    <a href="pseudoclass.html">Pseudo classes</a> <br><br>
+    <a href="pseudoelements.html">Pseudo elements</a><br><br>
+    <a href="media.html">media</a>
+    <button onclick="alert('n')" type="submit">
+        <div>
+            <h1>Hii</h1>
+            <p>This is a button</p>
+        </div>
+    </button>
     <input type="submit" value="sub">
 </body>
 
